@@ -48,7 +48,7 @@ class HangmanGame:
             
             # Clean the word to ensure it's just letters
             word = re.sub(r'[^a-z]', '', word)
-            
+
             return word if word else "python"  # fallback word
         except Exception as e:
             # Fallback words if API fails
@@ -201,7 +201,7 @@ game = HangmanGame()
 # Create Gradio interface
 with gr.Blocks(title="🎯 AI Hangman Game", theme=gr.themes.Soft()) as demo:
     gr.Markdown("# 🎯 AI Hangman Game")
-    gr.Markdown("*An intelligent hangman game powered by OpenAI that generates words based on difficulty level.*")
+    gr.Markdown("*An intelligent hangman game powered by AI that generates words based on difficulty level.*")
     
     with gr.Row():
         with gr.Column(scale=1):
